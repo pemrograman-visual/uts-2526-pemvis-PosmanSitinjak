@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="bilangan_prima"/>
+        <attribute name="authors" value="Christofer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 03:18:23 PM"/>
+        <attribute name="created" value="Q2hyaXN0b2ZlcjtMQVBUT1AtQ0wxRTkyOUM7MjAyNS0xMC0xNzswMjo1NzoyMyBQTTszMzMx"/>
+        <attribute name="edited" value="Q2hyaXN0b2ZlcjtMQVBUT1AtQ0wxRTkyOUM7MjAyNS0xMC0xNzswMzoxODoyMyBQTTsxOzM0Mzc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="n, x" type="Integer" array="False" size=""/>
+            <output expression="&quot;masukkan batas bilangan prima&quot;" newline="True"/>
+            <input variable="n"/>
+            <if expression="n &gt;=2">
+                <then>
+                    <output expression="&quot;Bilangan prima dari 2 hingga&quot;&amp;n&amp;&quot;:&quot;" newline="True"/>
+                    <for variable="x" start="2" end="n" direction="inc" step="1">
+                        <if expression="isPrima(x)">
+                            <then>
+                                <output expression="x &amp; &quot; &quot;" newline="True"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </for>
+                    <output expression="&quot;&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;input lebih besar dari 2&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

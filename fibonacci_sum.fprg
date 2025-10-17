@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fibonachi_sum"/>
+        <attribute name="authors" value="Christofer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2025-10-17 02:14:18 PM"/>
+        <attribute name="created" value="Q2hyaXN0b2ZlcjtMQVBUT1AtQ0wxRTkyOUM7MjAyNS0xMC0xNzswMjowNToxNyBQTTszMzI3"/>
+        <attribute name="edited" value="Q2hyaXN0b2ZlcjtMQVBUT1AtQ0wxRTkyOUM7MjAyNS0xMC0xNzswMjoxNDoxOCBQTTsxOzM0MzY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="fb1, fb2, temp, jumlah, n, i" type="Integer" array="False" size=""/>
+            <input variable="n"/>
+            <assign variable="fb1" expression="1"/>
+            <assign variable="fb2" expression="1"/>
+            <assign variable="jumlah" expression="0"/>
+            <for variable="i" start="0" end="n" direction="inc" step="1">
+                <assign variable="jumlah" expression="jumlah+fb1"/>
+                <assign variable="temp" expression="fb1"/>
+                <assign variable="fb1" expression="fb2"/>
+                <assign variable="fb2" expression="temp+1"/>
+            </for>
+            <output expression="jumlah" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
